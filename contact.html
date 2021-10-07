@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- //Custom Theme files -->
+<link href="css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
+<link href="css/style.css" type="text/css" rel="stylesheet" media="all">
+<!-- js -->
+<script src="js/jquery-1.11.1.min.js"></script>
+
+<!-- //js -->
+<!-- web-fonts -->
+
+
+<!-- //web-fonts -->
+<!-- start-smooth-scrolling -->
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$(".scroll").click(function(event){
+			event.preventDefault();
+
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+		});
+	});
+</script>
+<!-- //end-smooth-scrolling -->
+</head>
+<body>
+<!-- header -->
+<div class="header">
+	<div class="container">
+		<nav class="navbar navbar-default">
+			<div class="navbar-header">
+
+				<h1><a  href="index.html">About business</a></h1>
+			</div>
+			<!-- top-nav -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="index.html" >Main</a></li>
+					<li><a href="blog.html">Articles</a></li>
+					<li><a href="single.html" >Article</a></li>
+					<li><a href="contact.html" class="active">Contacts</a></li>
+					<li><a href="policy.html" >Privacy policy</a></li>
+					<li><a href="terms.html">Terms and conditions</a></li>
+				</ul>
+
+			</div>
+		</nav>
+	</div>
+</div>
+<!-- //header -->
+<!-- banner -->
+
+
+	<!-- //banner -->
+	<!-- contact -->
+	<div class="contact agileits">
+		<div class="container">
+			<div class="w3ls-title">
+				<h3>Contacts</h3>
+			</div>   
+			<div class="contact-grids">
+				<div class="col-md-7 contact-form">
+					<form action="thanks.html" method="post">
+						<input type="text" name="Name" placeholder="Name" required="">
+						<input class="email" type="text" name="Email" placeholder="Email" required="">
+						<input class="email" type="text" name="Phone" placeholder="Phone number" required="">
+						<textarea placeholder="" name="Message" required=""></textarea>
+						<input type="checkbox" name="terms" value="check" required=""/>
+						<a href="policy.html" target="_blank">
+							I have read and agree to the terms of the user agreement
+						</a>
+						<input type="submit" value="Send">
+					</form>
+				</div>
+				<div class="col-md-4 contact-right">
+					<div class="contact-text">
+						<p> 983 Jermain Forest Apt. 686
+West Devanteberg, MO 91683-3340</p>
+						<p>	+3936124920850 </p>
+						<p>preynolds@hotmail.com</p>
+					</div> 
+				</div> 
+				<div class="clearfix"> </div>	
+			</div>
+		</div>
+	</div>
+	<!-- //contact --> 
+	<!-- map -->
+
+<!-- //map -->
+<!-- footer -->
+<div class="footer" style="margin-top: 180px">
+	<div class="container">
+		<h3><a href="index.html">About business</a></h3>
+		<p> Copyright &copy;<script>document.write(new Date().getFullYear());</script>
+			All rights reserved</p>
+	</div>
+</div>
+<!-- //footer -->
+<div class='cookie-banner'>
+	<p>
+		The site uses cookies. They allow us to recognize you and get information about your user experience.By continuing to browse the site, I agree to the use of cookies by the site owner in accordance with  <a target="_blank" href="https://en.wikipedia.org/wiki/HTTP_cookie">Cookie policy</a>
+	</p>
+	<button class='close-cookie'>&times;</button>
+</div>
+<!-- smooth-scrolling-of-move-up -->
+<script type="text/javascript">
+	$(document).ready(function() {
+
+		var defaults = {
+			containerID: 'toTop', // fading element id
+			containerHoverID: 'toTopHover', // fading element hover id
+			scrollSpeed: 1200,
+			easingType: 'linear'
+		};
+
+		$().UItoTop({ easingType: 'easeOutQuart' });
+
+	});
+</script>
+<!-- //smooth-scrolling-of-move-up -->
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="js/bootstrap.js"></script>
+
+<script>
+	window.onload = function () {
+		$('.close-cookie').click(function () {
+			$('.cookie-banner').fadeOut();
+		})
+	}
+</script>
+<script>
+	let elems = document.querySelectorAll('.server-name');
+	elems.forEach((elem) => {
+		elem.innerHTML = window.location.hostname
+	})
+</script>
+</body>
+</html>
